@@ -1971,10 +1971,7 @@ https://drive.google.com/thumbnail?id=YOUR_ID&sz=w1400
                     const h4 = document.createElement("h4");
                     h4.textContent = item.title;
 
-                    const p = document.createElement("p");
-                    p.textContent = item.desc;
-
-                    body.append(h4, p);
+                    body.append(h4);
                     card.append(thumb, body);
 
                     card.addEventListener("click", () => openModal(state.active, index));
