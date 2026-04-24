@@ -12,12 +12,25 @@ frame-ancestors 'none';
 form-action 'none';
 img-src 'self' data: https:;
 style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
-script-src 'self' 'unsafe-inline' https://www.youtube.com https://www.youtube-nocookie.com;
+script-src 'self' 'unsafe-inline'
+https://www.youtube.com
+https://www.youtube-nocookie.com
+https://www.googletagmanager.com
+https://www.google-analytics.com;
 font-src 'self' https://fonts.gstatic.com;
-connect-src 'self';
+connect-src 'self' https://www.google-analytics.com;
 frame-src https://www.youtube.com https://www.youtube-nocookie.com;
 " />
     <meta name="theme-color" content="#0083FF" />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DXM4QR57C8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DXM4QR57C8');
+</script>
     <title>Portfolio</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
